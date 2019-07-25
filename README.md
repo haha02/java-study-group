@@ -1,5 +1,7 @@
 # Java Study Group
 
+At Tuesday lunch time, every 2 weeks, start from 7/30
+
 ## Study Material
 1. [Java SE 6 技術手冊](https://github.com/JustinSDK/JavaSE6Tutorial)
 2. [Modern Java in Action: Lambda, streams, functional and reactive programming](https://www.manning.com/books/modern-java-in-action)
@@ -11,9 +13,7 @@
 - Jeff (jf423)
 - Ray (sc2830704)
 
-## Schedule
-
-At Tuesday lunch time, every 2 weeks, start from 7/30
+## Study Plan
 
 ### Java SE 6 技術手冊
 
