@@ -17,6 +17,7 @@ At Tuesday lunch time, every 2 weeks, start from 7/30
 
 ### Java SE 6 技術手冊
 
+#### Schedule
 |Date      |Chapters|Presenter|Note|
 |----------|--------|---------|----|
 |2019-07-30|1 - 6   |N/A|以共同討論形式進行|
@@ -24,9 +25,11 @@ At Tuesday lunch time, every 2 weeks, start from 7/30
 |2019-08-20|10 - 13 |Ray||
 |2019-09-03|14 - 17 |Jimmy|w/ lab|
 
-Optional Topic:
+#### Optional Topic
 - JDBC
 - Frequently used utility libraries
+
+We can discuss on these topics if we have time
 
 ### Modern Java in Action
 
