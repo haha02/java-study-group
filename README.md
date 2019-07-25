@@ -22,7 +22,7 @@ At Tuesday lunch time, every 2 weeks, start from 7/30
 |7/30|1 - 6   |N/A|以共同討論形式進行|
 |8/6 |7 - 9   |Sean||
 |8/20|10 - 13 |Ray||
-|9/3 |14 - 17 |Jimmy|lab|
+|9/3 |14 - 17 |Jimmy|w/ lab|
 
 ### Modern Java in Action
 
