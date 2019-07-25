@@ -24,6 +24,10 @@ At Tuesday lunch time, every 2 weeks, start from 7/30
 |2019-08-20|10 - 13 |Ray||
 |2019-09-03|14 - 17 |Jimmy|w/ lab|
 
+Optional Topic:
+- JDBC
+- Frequently used utility libraries
+
 ### Modern Java in Action
 
 _Will be planned after finishing first book_
