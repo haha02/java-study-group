@@ -267,3 +267,101 @@ public class Chicken extends Bird { // 擴充Bird類別
 
 如果想讓子類別，也能夠直接存取父類別中的成員，而不是透過 ```public``` 方法成員，但也不是將資料成員宣告為 ```public```，可以使用 ```protected```
 
+### Override
+
+* 重新定義方法的實作內容、成員的存取權限，或是成員的返回值型態
+* 無法重新定義 static 方法
+
+<b>重新定義方法的實作內容</b>
+
+```java
+public class SimpleArray {
+    protected int[] array;
+
+    public SimpleArray(int i) {
+        array = new int[i];
+    }
+    public void setElement(int i, int data) {
+        array[i] = data;
+    }
+    ....
+} 
+```
+
+```java
+public class SafeArray extends SimpleArray {
+    public SafeArray(int i) {
+        super(i);
+    }
+    // 重新定義setElement()
+    public void setElement(int i, int data) {
+        if(i < array.length)
+            super.setElement(i, data);
+    }
+    ....
+}
+```
+
+```java
+SimpleArray simpleArray = new SafeArray();
+simpleArray.setElement();
+```
+
+<b>重新定義成員的存取權限</b>
+
+* 可以``增大``父類別中的方法權限，但不可以``縮小``父類別的方法權限 => 編譯時會報錯
+    * 原來成員是 ```public``` 的話，不可以在父類別中重新定義它為 ```private``` 或 ```protected```
+
+<b>重新定義返回值型態</b>
+
+重新定義的返回值型態必須是父類別中同一方法返回型態的子類別
+
+```java
+public class Bird {
+    protected String name;
+
+    public Bird(String name) {
+        this.name = name;
+    }
+    public Bird getCopied() {
+        return new Bird(name);
+    }
+}
+
+public class Chicken extends Bird {
+    protected String crest;
+
+    public Point3D(String name, String crest) {
+        super(name);
+        this.crest = crest;
+    }
+    // 重新定義返回值型態為 Chicken
+    public Chicken getCopied() {
+        return new Chicken(name, crest);
+    }
+}
+```
+
+### Object 類別
+
+* Object 類別是 Java 中所有類別的父類別
+* 在 Java 中定義類別時如果沒有指定要繼承的類別，則自動繼承 Object 類別
+
+```java
+public class Foo { 
+    ... 
+} 
+// 自動變成
+public class Foo extends Object { 
+    ...
+} 
+```
+
+### final
+
+在變數宣告時使用```final```，表示該變數一旦設定之後，就不可以再改變該變數的值
+
+## Polymorphism 多型
+
+* 使用同一個操作介面，以操作不同的物件實例
+
