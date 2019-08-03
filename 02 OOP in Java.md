@@ -4,6 +4,8 @@
 
 >「物件就像是一件具體的工具，而類別定義了這個工具如何產生。」
 
+> 封裝(Encapsulation)，繼承(Inheritance)，多型(Polymorphism)
+
 ## Encapsulation
 
 ![encapsulation](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/CPT-OOP-interfaces.svg/2560px-CPT-OOP-interfaces.svg.png "encapsulation")
@@ -98,43 +100,6 @@ public class Account {
 ``` 
 * 如果沒有定義任何的建構方法，則編譯器會自動配置一個無參數且沒有陳述內容的建構方法。
 
-
-### static
-
-* 靜態資料成員，靜態成員是屬於類別所擁有，而不是個別的物件
-* 可以將靜態成員視為每個物件實例所共享的資料成員
-* 靜態資料與靜態方法的作用通常是為了提供共享的資料或工具方法
-* static attribute 通常使用 className.attribute，而不會宣告物件後使用 object.attribute
-
-```java
-public class Ball { 
-    public static double PI = 3.14159; // 宣告 static 資料
-    ...
-}
-
-System.out.println("PI = " + Ball.PI);
-```
-
-* 所以靜態方法中不會有 this 參考名稱，由於沒有 this 名稱
-* 由於沒有 this 名稱，所以在 Java 的靜態方法中不允許使用非靜態成員，因為沒有 this 來參考至物件
-```java
-public class StaticDemo {
-    public static void sayHello() {
-        System.out.println("哈囉！");
-    }
-
-    public static void main(String[] args) {
-        sayHello();
-    }
-}
-```
-*  上面的例子如果把 ```sayHello``` 的 ```static``` 拿掉就會出現以下錯誤
-```
-non-static method sayHello() cannot be referenced from a static context
-```
-
-### method
-
 <b>Overload</b>
 
 不同參數定義不同方法
@@ -170,6 +135,42 @@ public class SomeClass {
         return 0.0;
     }
 }
+```
+
+
+### static
+
+* 靜態資料成員，靜態成員是屬於類別所擁有，而不是個別的物件
+* 可以將靜態成員視為每個物件實例所共享的資料成員
+* 靜態資料與靜態方法的作用通常是為了提供共享的資料或工具方法
+* static attribute 通常使用 className.attribute，而不會宣告物件後使用 object.attribute
+
+```java
+public class Ball { 
+    public static double PI = 3.14159; // 宣告 static 資料
+    ...
+}
+
+System.out.println("PI = " + Ball.PI);
+```
+
+* 所以靜態方法中不會有 this 參考名稱，由於沒有 this 名稱
+* 由於沒有 this 名稱，所以在 Java 的靜態方法中不允許使用非靜態成員，因為沒有 this 來參考至物件
+
+```java
+public class StaticDemo {
+    public static void sayHello() {
+        System.out.println("哈囉！");
+    }
+
+    public static void main(String[] args) {
+        sayHello();
+    }
+}
+```
+*  上面的例子如果把 ```sayHello``` 的 ```static``` 拿掉就會出現以下錯誤
+```
+non-static method sayHello() cannot be referenced from a static context
 ```
 
 ### 不定長度引數
@@ -361,7 +362,140 @@ public class Foo extends Object {
 
 在變數宣告時使用```final```，表示該變數一旦設定之後，就不可以再改變該變數的值
 
+
 ## Polymorphism 多型
 
 * 使用同一個操作介面，以操作不同的物件實例
+* 父類別可透過子類別衍伸成多種型態
+* 父類別為子類別的通用型態，再透過子類別可覆寫父類別的方法來達到多型的效果，也就是同樣的方法名稱會有多種行為
 
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        Animal cat = new Cat();
+        Animal bird = new Bird();
+
+        cat.action();
+        bird.action();
+    }
+}
+
+class Animal {
+    public void action() {
+        System.out.println("move");
+    };
+}
+
+class Cat extends Animal {
+    public void action() {
+        System.out.println("run");
+    }
+}
+
+class Bird extends Animal {
+    public void action() {
+        System.out.println("fly");
+    }
+}
+```
+
+### Abstract class
+
+* 實際上在設計 Polymorphism 並不依賴於具體類別，而是依賴於抽象類別
+* 僅宣告方法名稱而不實作當中的邏輯
+* 如果一個方法中包括了抽象方法，則該類別稱之為「抽象類別」
+* 不能被用來生成物件，只能被繼承擴充，並於繼承後實作未完成的抽象方法
+* 子類別都必須實作已宣告之抽象方法 
+* 使用 ```abstract``` 關鍵字 (不得宣告為 final class)
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        Animal cat = new Cat();
+        Animal bird = new Bird();
+
+        cat.action();
+        bird.action();
+    }
+}
+
+abstract class Animal {
+    public abstract void action();
+}
+
+class Cat extends Animal {
+    public void action() {
+        System.out.println("run");
+    }
+}
+
+class Bird extends Animal {
+    public void action() {
+        System.out.println("fly");
+    }
+}
+```
+
+### Interface
+
+* 定義方法時，只能為抽象方法
+* 定義功能的名稱，實作部分留給相關類別 override
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        Animal bird = new Bird();
+
+        dog.action();
+        bird.action();
+    }
+}
+
+interface Animal {
+    public abstract void action();
+}
+
+class Dog implements Animal {
+    public void action() {
+        System.out.println("run");
+    }
+}
+
+class Bird implements Animal {
+    public void action() {
+        System.out.println("fly");
+    }
+}
+
+```
+
+* 介面的目的在定義一組可操作的方法，實作某介面的類別必須實作該介面所定義的所有方法
+* 可以一次實作多個介面
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        Child child = new Child();
+        child.action1();
+        child.action2();
+    }
+}
+
+interface Interface1 {
+    public abstract void action1();
+}
+
+interface Interface2 {
+    public abstract void action2();
+}
+
+class Child implements Interface1, Interface2 {
+    public void action1() {
+        System.out.println("action1");
+    }
+    public void action2() {
+        System.out.println("action2");
+    }
+}
+```
