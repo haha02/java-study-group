@@ -4,7 +4,9 @@
 
 >「物件就像是一件具體的工具，而類別定義了這個工具如何產生。」
 
-> 封裝(Encapsulation)，繼承(Inheritance)，多型(Polymorphism)
+OOP 三大特性：
+
+封裝(Encapsulation)，繼承(Inheritance)，多型(Polymorphism)
 
 ## Encapsulation
 
@@ -67,6 +69,7 @@ public class Account {
 * private
 
 ![privilege](https://i.stack.imgur.com/SFysv.jpg "privilege")
+
 https://stackoverflow.com/questions/4361553/what-is-the-difference-between-public-private-and-protected
 
 | Asscess  |public|protected|private|
@@ -80,7 +83,7 @@ https://stackoverflow.com/questions/4361553/what-is-the-difference-between-publi
 回到上面的例子，由於 ```accountNumber, balance``` 宣告為  ```private```，則其可視範圍（Scope）為整個類別內部，由於外界無法直接存取私用成員，所以必須要使用兩個公開方法 ```getAccountNumber()``` 與 ```getBalance()``` 分別傳回其這兩個成員的值
 
 <b>Constructor</b>
-* 類別名稱同名的方法
+* 類別名稱同名，沒有 return type 的方法
 * 建構物件的同時，可以同時初始一些必要的資訊
 * 建構方法可以被「重載」（Overload），滿足物件生成時各種不同的初始需求
 ```java
@@ -332,7 +335,7 @@ public class Bird {
 public class Chicken extends Bird {
     protected String crest;
 
-    public Point3D(String name, String crest) {
+    public Chicken(String name, String crest) {
         super(name);
         this.crest = crest;
     }
@@ -499,3 +502,28 @@ class Child implements Interface1, Interface2 {
     }
 }
 ```
+
+# package 與 import
+
+## Inner class
+
+* 內部類別可以直接存取其所在類別中的私用（private）成員
+* 當某個 Slave 類別完全只服務於一個 Master 類別時，可以將之設定為內部類別，如此使用 Master 類別的人就不用知道 Slave 的存在
+* 成員內部類別同樣也可以使用 ```public```、```protected``` 或 ```private``` 來修飾其存取權限
+
+```java
+public class OuterClass { 
+    // 內部類別 
+    private class InnerClass { 
+        // .... 
+    } 
+}
+```
+
+## package
+
+![package](image/oop-in-java-package.png "package")
+
+## import
+
+![import](image/oop-in-java-import.png "import")
