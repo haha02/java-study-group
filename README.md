@@ -27,7 +27,17 @@ At Tuesday lunch time, every 1 or 2 weeks, start from 7/30
 |2019-08-06|OOP in Java|7 - 9   |Sean||A907|
 |2019-08-20|Generics & Collections|10 - 13 |Ray||A503|
 |2019-09-03|Reflection|14 - 17 |Jimmy|w/ lab|A503|
-|2019-09-24|||||A1502|
+##### Optional Topic
+We can discuss on these topics if we have time
+- JDBC
+- Frequently used utility libraries
+
+### Modern Java in Action
+
+#### Schedule
+|Date      |Topic|Chapters|Presenter|Note|Meeting Room|
+|----------|-----|--------|---------|----|------------|
+|2019-09-24|Planning||||A1502|
 |2019-10-01|||||A1503|
 |2019-10-08|||||A1502|
 |2019-10-29|||||B403|
@@ -35,12 +45,3 @@ At Tuesday lunch time, every 1 or 2 weeks, start from 7/30
 |2019-11-12|||||B306|
 |2019-11-19|||||B401|
 
-#### Optional Topic
-- JDBC
-- Frequently used utility libraries
-
-We can discuss on these topics if we have time
-
-### Modern Java in Action
-
-_Will be planned after finishing first book_
