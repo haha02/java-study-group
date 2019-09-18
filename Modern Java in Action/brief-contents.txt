@@ -1,0 +1,33 @@
+PART 1 FUNDAMENTALS ............................................................1
+ 1 Java 8, 9, 10, and 11: what’s happening?                                     3   23p
+ 2 Passing code with behavior parameterization                                 26   26p
+ 3 Lambda expressions                                                          42   37p
+
+PART 2 FUNCTIONAL-STYLE DATA PROCESSING WITH STREAMS ......................... 79
+ 4 Introducing streams                                                         81   17p
+ 5 Working with streams                                                        98   36p
+ 6 Collecting data with streams                                               134   38p
+ 7 Parallel data processing and performance                                   172   27p
+
+PART 3 EFFECTIVE PROGRAMMING WITH STREAMS AND LAMBDAS.........................199   
+ 8 Collection API enhancements                                                201   15p
+ 9 Refactoring, testing, and debugging                                        216   23p
+10 Domain-specific languages using lambdas                                    239   34p
+
+PART 4 EVERYDAY JAVA .........................................................273
+11 Using Optional as a better alternative to null                             275   22p
+12 New Date and Time API                                                      297   17p
+13 Default methods                                                            314   19p
+14 The Java Module System                                                     333   22p
+
+PART 5 ENHANCED JAVA CONCURRENCY .............................................355
+15 Concepts behind CompletableFuture and reactive programming                 357   30p
+16 CompletableFuture: composable asynchronous programming                     387   29p
+17 Reactive programming                                                       416   27p
+
+PART 6 FUNCTIONAL PROGRAMMING AND FUTURE JAVA
+EVOLUTION.....................................................................443
+18 Thinking functionally                                                      445   15p
+19 Functional programming techniques                                          460   25p
+20 Blending OOP and FP: Comparing Java and Scala                              485   15p
+21 Conclusions and where next for Java                                        500   17p
