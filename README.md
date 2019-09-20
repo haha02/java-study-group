@@ -40,7 +40,7 @@ We can discuss on these topics if we have time
 #### Schedule
 |Date      |Topic|Chapters|Presenter|Note|Meeting Room|
 |----------|-----|--------|---------|----|------------|
-|2019-09-24|Planning||||A1502|
+|2019-09-24|Planning & Introduction|Chapter 1|Jimmy||A1502|
 |2019-10-01|||||A1503|
 |2019-10-08|||||A1502|
 |2019-10-29|||||B403|
