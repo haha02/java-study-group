@@ -7,7 +7,6 @@ At Tuesday lunch time, every 1 or 2 weeks, start from 7/30
 2. [Modern Java in Action: Lambda, streams, functional and reactive programming](https://www.manning.com/books/modern-java-in-action)
 
 ## Members
-### 一般成員
 - Jimmy (haha02)
 - Sean (sean1093)
 - Jeff (jf423)
