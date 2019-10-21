@@ -46,10 +46,10 @@ At Tuesday lunch time, every 1 or 2 weeks, start from 7/30
 #### Schedule
 |Date      |Topic|Chapters|Presenter|Meeting Room|
 |----------|-----|--------|---------|------------|
-|2019-09-24|Planning & Introduction|1|Jimmy|A1502|
-|2019-10-01|Behavior Parameterization & Lambdas|2, 3|Jimmy|A1503|
-|2019-10-22|Streams|4, 5|Sean|A1502|
-|2019-10-29|||||B403|
-|2019-11-05|||||C801|
-|2019-11-12|||||B306|
-|2019-11-19|||||B401|
+|2019-09-24|Planning & Introduction            |1   |Jimmy|A1502|
+|2019-10-01|Behavior Parameterization & Lambdas|2 - 3|Jimmy|A1503|
+|2019-10-22|Streams                            |4 - 5|Sean |A1502|
+|2019-10-29| | | |B403|
+|2019-11-05| | | |C801|
+|2019-11-12| | | |B306|
+|2019-11-19| | | |B401|
