@@ -27,10 +27,10 @@ At Tuesday lunch time, every 1 or 2 weeks, start from 7/30
   - Chapter 10 - Domain-specific languages using lambdas - `Jean`
 
 - PART 4 EVERYDAY JAVA
-  - Chapter 11 - Using Optional as a better alternative to null - `Riley`
-  - Chapter 12 - New Date and Time API - `Riley`
-  - Chapter 13 - Default methods - `Riley`
-  - Chapter 14 - The Java Module System - `[SKIP]`
+  - Chapter 11 - Using Optional as a better alternative to null - `Peter`
+  - Chapter 12 - New Date and Time API - `Peter`
+  - Chapter 13 - Default methods - `Peter`
+  - Chapter 14 - The Java Module System - `<< SKIP >>`
 
 - PART 5 ENHANCED JAVA CONCURRENCY
   - Chapter 15 - Concepts behind CompletableFuture and reactive programming - `Joey`
@@ -49,19 +49,8 @@ At Tuesday lunch time, every 1 or 2 weeks, start from 7/30
 |2019-09-24|Planning & Introduction            |1   |Jimmy|A1502|
 |2019-10-01|Behavior Parameterization & Lambdas|2 - 3|Jimmy|A1503|
 |2019-10-22|Streams                            |4 - 5|Sean |A1502|
-|2019-10-29| | | |B403|
-|2019-11-05| | | |C801|
-|2019-11-12| | | |B306|
-|2019-11-19| | | |B401|
-|2019-11-26| | | |B204|
-|2019-12-03| | | |B204|
-|2019-12-06| | | |A1401|
-|2019-12-10| | | |B403|
-|2019-12-17| | | |A1401|
-|2019-12-24| | | |C801|
-|2020-01-07| | | |A1502|
-|2020-01-14| | | |A1502|
-|2020-01-21| | | |A1502|
-|2020-01-28| | | |A1401|
-|2020-02-04| | | |A1401|
-|2020-02-11| | | |A1401|
+|<略>      |     |        |         |            |
+|2020-02-25|Refactoring, testing, and debugging, DSL using lambdas |9 - 10|Jean ||
+||Optional, new date time API, default methods|11 - 13|Peter||
+|2020-03-03| | | ||
+|2020-03-10| | | ||
