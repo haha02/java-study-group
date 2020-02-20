@@ -8,3 +8,5 @@
 - Jean (Yu-ChunHu)
 - Dennis (dennis-wen)
 - Mark
+- Jay
+- Peter
