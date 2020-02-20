@@ -51,6 +51,11 @@ At Tuesday lunch time, every 1 or 2 weeks, start from 7/30
 |2019-10-22|Streams                            |4 - 5|Sean |A1502|
 |<略>      |     |        |         |            |
 |2020-02-25|Refactoring, testing, and debugging, DSL using lambdas |9 - 10|Jean ||
-||Optional, new date time API, default methods|11 - 13|Peter||
-|2020-03-03| | | ||
-|2020-03-10| | | ||
+||Optional, new date time API, default methods|11 - 13|Peter|A1401|
+|2020-03-03| | | |A1401|
+|2020-03-10| | | |A1502|
+|2020-03-17| | | |A1401|
+|2020-03-24| | | |A1401|
+|2020-03-31| | | |A1401|
+|2020-04-07| | | |A1401|
+|2020-04-14| | | |A1401|
