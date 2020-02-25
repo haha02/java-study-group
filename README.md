@@ -52,7 +52,7 @@ At Tuesday lunch time, every 1 or 2 weeks, start from 7/30
 |<略>      |     |        |         |            |
 |2020-02-25|Refactoring, testing, and debugging, DSL using lambdas |9 - 10|Jean ||
 ||Optional, new date time API, default methods|11 - 13|Peter|A1401|
-|2020-03-03| | | |A1401|
+|2020-03-03|CompletableFuture & Reactive Programming |15 - 16 |Joey |A1401|
 |2020-03-10| | | |A1502|
 |2020-03-17| | | |A1401|
 |2020-03-24| | | |A1401|
