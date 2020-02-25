@@ -9,11 +9,7 @@ public class AnonymousClassToLambdaTest {
   @Test
   @DisplayName("From anonymous classes to lambda expressions")
   void testSimpleRefactor() {
-    Runnable r1 = new Runnable() {
-      public void run() {
-        System.out.println("是在 Hello");
-      }
-    };
+    Runnable r1 = () -> System.out.println("是在 Hello");
   }
 
   @Test
@@ -40,22 +36,16 @@ public class AnonymousClassToLambdaTest {
       System.out.println(a);
     };
 
-    Runnable r2 = new Runnable() {
-      public void run() {
-        int a = 2;
-        System.out.println(a);
-      }
+    Runnable r2 = () -> {
+      int a1 = 2;
+      System.out.println(a1);
     };
   }
 
   @Test
   @DisplayName("Test code ambiguous in the context of overloading")
   void testCodeAmbiguous() {
-    doSomething(new Task() {
-      public void execute() {
-        System.out.println("Danger danger!!");
-      }
-    });
+    doSomething((Task) () -> System.out.println("Danger danger!!"));
 
     // Cause compile error
 //    doSomething(() -> System.out.println("Danger danger!!"));

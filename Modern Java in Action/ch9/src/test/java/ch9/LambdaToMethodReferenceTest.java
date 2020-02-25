@@ -18,11 +18,7 @@ public class LambdaToMethodReferenceTest {
     Map<CaloricLevel, List<Dish>> dishesByCaloricLevel =
         menu.stream()
             .collect(
-                groupingBy(dish -> {
-                  if (dish.getCalories() <= 400) return CaloricLevel.DIET;
-                  else if (dish.getCalories() <= 700) return CaloricLevel.NORMAL;
-                  else return CaloricLevel.FAT;
-                }));
+                groupingBy(Dish::getCaloricLevel));
 
     dishesByCaloricLevel.forEach((k, v) -> {
       System.out.println("CaloricLevel: " + k);

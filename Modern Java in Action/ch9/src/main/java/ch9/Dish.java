@@ -4,7 +4,7 @@ class Dish {
   private String name;
   private int calories;
 
-  public enum CaloricLevel {DIET, NORMAL, FAT;}
+  public enum CaloricLevel {DIET, NORMAL, FAT}
 
   private Dish(String name, int calories) {
     this.name = name;
@@ -29,5 +29,11 @@ class Dish {
 
   public void setCalories(int calories) {
     this.calories = calories;
+  }
+
+  CaloricLevel getCaloricLevel() {
+    if (getCalories() <= 400) return CaloricLevel.DIET;
+    else if (getCalories() <= 700) return CaloricLevel.NORMAL;
+    else return CaloricLevel.FAT;
   }
 }
